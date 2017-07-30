@@ -124,7 +124,7 @@ class Welcome extends CI_Controller {
             $res['data']= $this->main->delete_cart($_POST['id']);
             echo json_encode($res); 
         }
-        public function logout($param) {
+        public function logout() {
             $this->session->sess_destroy();
             
         }
